@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win11</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="taskbar">
+        <button style="border: none;" onclick="clicked()">
+            <img class="icon" src="favicon.ico" alt="">
+        </button>
+        <img src="icon.PNG" alt="">
+        <img class="right" src="taskbarright.PNG" alt="">
+    </div>
+    <div class="menu" id="menu"></div>
+    <div class="icons">
+        <div class="icon1">
+            <img src="chromeicon.png" alt="">
+            <h5>Google <br> Chrome</h5>
+        </div>
+        <div class="icon2">
+            <img src="edgeicon.png" alt="">
+            <h5>Microsoft <br> Edge</h5>
+        </div>
+        <div class="icon3">
+            <img src="recyclebinicon.png" alt="">
+            <h5>Recycle <br>Bin</h5>
+        </div>
+    </div>
+    <video autoplay muted src="video.webm"></video>
+</body>
+<script>
+    var a = document.getElementById("menu")
+    console.log(a);
+    function clicked(){
+        if (a.style.bottom == "60px") {
+            a.style = "position:absolute; bottom:-500px; transition: all 0.66s ease-in;"
+        }
+        else{
+            a.style = "position:absolute; bottom:60px; transition: all 0.66s ease-in;"
+        }
+        console.log("clicked");
+    }
+</script>
+
+</html>

@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+body{
+    /* background: url('bg.jpeg');
+    background-size: 1380px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background: rgba(0, 0, 0, 0.164); */
+    /* height: 100%; */
+    overflow: hidden;
+    /* z-index: 0; */
+}
+
+
+.taskbar .icon{
+    height: 45px;
+    left: 4px;    
+}
+
+.taskbar{
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: baseline; */
+    bottom: 0px;
+    background: rgb(243 243 243);
+    z-index: 5;
+}
+
+.taskbar .right{
+    position: absolute;
+    right:5px;
+    top: 1.5px;
+}
+
+.menu{
+    display: flex;
+    background: url('Atharv.png');
+    background-size: cover;
+    width: 421px;
+    height: 450px;
+    position: absolute;
+    /* bottom: 60px; */
+    bottom: -500px;
+    left: 32%;
+    transition: all 0.56s ease-in;
+    /* z-index: 44; */
+}
+
+video{
+    z-index: 0;
+}
+
+.icons{
+    z-index: 22;
+}
+
+.icons .icon1 img{
+    width: 75px;
+    position: absolute;
+    top: 4px;
+}
+
+.icons .icon1 h5{
+    top: 50px;
+    position: absolute;
+    left: 14.5px;
+}
+.icons .icon2 img{
+    width: 45px;
+    position: absolute;
+    top: 90px;
+    left: 12px;
+}
+
+.icons .icon2 h5{
+    top: 135px;
+    position: absolute;
+    left: 9.5px;
+    text-align: center;
+}
+.icons .icon3 img{
+    width: 60px;
+    position: absolute;
+    top: 180px;
+    left: 5px;
+}
+
+.icons .icon3 h5{
+    top: 235px;
+    position: absolute;
+    left: 14.5px;
+    text-align: center;
+}
